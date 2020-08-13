@@ -8,6 +8,7 @@ Some nodes choose to be VPN servers (they can be entry nodes, intermediate nodes
 ### Specifications
 
 - The connections between the nodes could be established via shadowsocks or openvpn, but a way to disguise traffic as "noise" or similar to regular traffic would be better.
+  - Seems like ShadowSOCKS does the trick, connections will automatically be dropped upon new ShadowSOCKS release to allow nodes to update their ShadowSOCKS installation, making the VPN's as hard to block as the current ShadowSOCKS version.
 - Nodes volunteering to be VPN servers would have to redirect traffic to multiple other nodes if these nodes are part of more than one circuit
 - A smart contract would have to be designed to collect tokens from the user and distribute them evenly among the VPN server nodes
 
